@@ -16,3 +16,7 @@ wp-content/plugins/hello.php
 /readme.html
 /license.txt
 
+# OS specific
+.DS_Store
+Thumbs.db
+
