@@ -1,0 +1,2 @@
+# ChicagolyMagazine
+Chicagoly Magazine
