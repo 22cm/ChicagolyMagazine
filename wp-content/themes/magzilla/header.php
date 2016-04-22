@@ -69,6 +69,7 @@ global $ft_option, $fave_container; // Fetch options stored in $ft_option;
 </script>
 <!-- End Google Analytics -->
 
+
 </head>
 
 <?php 
@@ -95,6 +96,7 @@ if ( $main_layout == "container-fluid" ) {
 
 <body <?php body_class( $boxed_layout ); ?>>
 
+
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-556JXJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -104,6 +106,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-556JXJ');</script>
 <!-- End Google Tag Manager -->
+
 
 
 	<div id="fb-root"></div>

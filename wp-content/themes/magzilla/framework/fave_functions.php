@@ -2798,11 +2798,9 @@ if ( ! function_exists( 'fave_breadcrumbs' ) ) {
                     if ($the_cat->parent != 0) {
 
                         $cats = get_category_parents($the_cat->parent, true, $delimiter);
+                        $cats = preg_replace('#<a([^>]+)>([^<]+)</a>#', $replace, $cats);
 
-                        if( !is_wp_error($cats) ) {
-                            $cats = preg_replace('#<a([^>]+)>([^<]+)</a>#', $replace, $cats);
-                            echo $cats;
-                        }
+                        echo $cats;
                     }
 
                     // print category
@@ -2855,10 +2853,9 @@ if ( ! function_exists( 'fave_breadcrumbs' ) ) {
                         $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
                     }
 
-                    if( !is_wp_error($cats) ) {
-                        $cats = preg_replace('#<a([^>]+)>([^<]+)</a>#', $replace, $cats);
-                        echo $cats;
-                    }
+                    $cats = preg_replace('#<a([^>]+)>([^<]+)</a>#', $replace, $cats);
+
+                    echo $cats;
 
                     if ($show_current == 1) {
                         echo $before . get_the_title() . $after;
